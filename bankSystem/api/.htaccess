@@ -1,0 +1,4 @@
+RewriteEngine on
+    RewriteRule ^request/(.*)$ server.php?query=$1
+    ##RewriteRule ^request/(.*)/(.*)$ server.php?query=$1&callback=$2
+

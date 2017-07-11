@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<?php
+session_start();
+?>
+<html>
+<head>
+<style type="text/css">
+
+
+
+h1,h2{
+text-align: center;
+}
+
+#content{
+background-color:white;
+
+margin:100px;
+}
+body {
+    background-color: lightblue;
+}
+</style>
+<meta charset="UTF-8">
+<title>Simple Bank App</title>
+</head>
+<body>
+<div id="content">
+<h1>Simple Bank App</h1>
+<a href="logout.php" align="right-side"><?php echo $_SESSION['username']?>|Logout</a>
+<h2>Transfer Money | <a href="operations.php">Home<a/></h2 >
+<form  action="login.php" method="post" align="center">
+ <fieldset>
+<legend>Deposit Cash</legend>
+From Account:<br/>
+<select>
+<option>1dhfbde</option>
+<option>2kerevbg</option>
+<option>3kjrvkj</option>
+
+</select>
+<br/>
+To Account:<br>
+<input type="text" name="name" required length="100" value=""/>
+<br>
+Amount:<br>
+<input type="text" name="name" required length="100" value=""/>
+<br>
+<input type="submit" value="Transfer" name="transfer">
+
+</fieldset>
+</form>
+
+
+</div>
+</body>
+
+</html>
